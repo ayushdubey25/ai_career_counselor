@@ -1,6 +1,6 @@
 const Assessment = require('../models/Assessment');
-const User = require('../models/User');
-const aiService = require('../services/aiService');
+const User = require('../models/User.models');
+const aiService = require('../services/ai.service');
 
 // Start AI-powered assessment
 const startAssessment = async (req, res) => {

@@ -6,8 +6,8 @@ const {
   analyzeResume,
   getInterviewPrep,
   getSalaryAdvice
-} = require('../controllers/assessmentController');
-const auth = require('../middleware/auth');
+} = require('../controllers/assessment.controller');
+const auth = require('../middlewares/auth.middleware');
 const router = express.Router();
 
 router.get('/start', auth, startAssessment);

@@ -17,10 +17,10 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // Routes
-// app.use('/api/auth', require('./routes/auth'));
-// app.use('/api/users', require('./routes/users'));
-// app.use('/api/careers', require('./routes/careers'));
-// app.use('/api/assessments', require('./routes/assessments'));
+app.use('/api/auth', require('./routes/auth.routes.js'));
+// app.use('/api/users', require('./routes/user.routes.js'));
+app.use('/api/careers', require('./routes/assessment.routes.js'));
+app.use('/api/assessments', require('./routes/assessment.routes.js'));
 
 // Root route
 app.get('/', (req, res) => {
